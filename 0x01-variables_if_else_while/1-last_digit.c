@@ -31,7 +31,8 @@ int main(void)
 	} else if (lastDigit == 0)
 	{
 		printf("%d and is 0\n", lastDigit);
-	} else {
+	} else
+	{
 		printf("%d is 5\n", lastDigit);
 	}
 	return (0);
