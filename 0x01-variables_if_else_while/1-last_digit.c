@@ -33,7 +33,7 @@ int main(void)
 		printf("%d and is 0\n", lastDigit);
 	} else
 	{
-		printf("%d and is 0\n", lastDigit);
+		printf("%d is out of scope", lastDigit);
 	}
 	return (0);
 }
