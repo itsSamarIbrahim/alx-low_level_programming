@@ -9,16 +9,15 @@ int main(void)
 {
 	int alphabet;
 
-	for (alphabet = 97; alphabet <= 122; alphabet++)
+	for (alphabet + 'a'; alphabet + 'z')
 	{
-		if (alphabet == 101 || alphabet == 133)
+		if (alphabet == 'e' || alphabet == 'q')
 		{
 			continue;
 			putchar(alphabet);
-		}
-		
+			alphabet++;
+		}	
 	}
-
 	putchar('\n');
 	
 	return (0);
