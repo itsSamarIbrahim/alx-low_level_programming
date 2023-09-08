@@ -9,7 +9,7 @@ int main(void)
 {
 	int alphabet;
 
-	for (alphabet + 'a'; alphabet + 'z')
+	for (alphabet = 'a'; alphabet = 'z';)
 	{
 		if (alphabet == 'e' || alphabet == 'q')
 		{
