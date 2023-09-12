@@ -3,14 +3,14 @@
 /**
  * print_last_digit - a function that prints the last digit of a number.
  *
- * @i: the number to be printed
+ * @n: the number to be checked
+ * @lastDigit: the number to be printed
  *
  * Return: the value of the last digit
  */
 int print_last_digit(int n)
 {
 	int lastDigit = n % 10;
-	
 	if (n < 0)
 	{
 		lastDigit = ((n % 10) * -1);
