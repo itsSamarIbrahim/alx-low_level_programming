@@ -5,7 +5,7 @@
  *
  * @i: the number to be checked for the absolute value.
  *
- * return: 0
+ * return: the absolute value of i.
  */
 int _abs(int i)
 {
@@ -16,5 +16,5 @@ int _abs(int i)
 	else
 	{
 		return (i);
-	}	
+	}
 }
