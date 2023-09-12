@@ -9,18 +9,15 @@
  */
 int print_sign(int n)
 {
-	int min;
-	min = -1;
-
 	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
 	}
-	else if (n < -1)
+	else if (n < 0)
 	{
 		_putchar('-');
-		return (min);
+		return (-1);
 	}
 	else
 	{
