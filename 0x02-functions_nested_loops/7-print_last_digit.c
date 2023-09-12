@@ -4,7 +4,6 @@
  * print_last_digit - a function that prints the last digit of a number.
  *
  * @n: the number to be checked
- * @lastDigit: the number to be printed
  *
  * Return: the value of the last digit
  */
