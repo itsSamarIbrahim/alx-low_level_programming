@@ -5,7 +5,7 @@
  *
  * @i: the number to be checked for the absolute value.
  *
- * return: the absolute value of i.
+ * Return: the absolute value of i.
  */
 int _abs(int i)
 {
