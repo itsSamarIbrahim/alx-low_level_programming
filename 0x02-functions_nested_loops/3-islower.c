@@ -5,7 +5,7 @@
  *
  * @c: the character to be checked
  *
- * return : 1 if is the character lowercase, 0 otherwise
+ * Return : 1 if is the character lowercase, 0 otherwise
  */
 int _islower(int c)
 {
