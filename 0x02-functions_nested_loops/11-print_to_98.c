@@ -4,6 +4,8 @@
  * print_to_98 - a function that prints all natural numbers from n to 98
  * and a new line.
  *
+ * @n: the number to be entered
+ *
  * Return: 0
  */
 void print_to_98(int n)
