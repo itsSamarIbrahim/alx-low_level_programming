@@ -9,7 +9,7 @@ int add(int x, int y)
 {
 	int result = x + y;
 
-	_putchar(result);
+	_putchar(result + 48);
 
 	return (0);
 }
