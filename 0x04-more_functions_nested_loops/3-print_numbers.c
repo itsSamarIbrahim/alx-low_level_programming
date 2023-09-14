@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - a function prints the numbers, from 0 to 9 & a new line.
- * @a: the number
  * Return: void
  */
 void print_numbers(void)
