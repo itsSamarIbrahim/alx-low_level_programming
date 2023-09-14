@@ -3,8 +3,6 @@
 /**
  * more_numbers - a function that prints 10 times the numbers, from 0 to 14,
  * followed by a new line.
- * @x: the numbers
- * @y: the times the numbers got printed
  * Return: void
  */
 void more_numbers(void)
