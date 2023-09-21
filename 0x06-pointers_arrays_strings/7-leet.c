@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- *
+ * *leet - a function that encodes a string into 1337
+ * @str: the string to be replaced
+ * Return: the desired style of the string
  */
 char *leet(char *str)
 {
