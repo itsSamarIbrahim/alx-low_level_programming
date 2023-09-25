@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		firstDiagonalSum = firstDiagonalSum + *(a + i * size + 1);
-		secondDiagonalSum = secondDiagonalSum + *(a + i * size + (size - 1 - i));
+		secondDiagonalSum = secondDiagonalSum + *(a + i * size + i);
 	}
 	printf("%d, ", firstDiagonalSum);
 	printf("%d\n", secondDiagonalSum);
