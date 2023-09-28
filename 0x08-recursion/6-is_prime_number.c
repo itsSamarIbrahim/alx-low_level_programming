@@ -8,6 +8,7 @@
  * @i: a number that evenly divides another number without leaving a remainder
  * Return: 1 if it is a prime number or 0 it it is not
  */
+
 int helper(int n, int i)
 {
 	if (i == 1)
