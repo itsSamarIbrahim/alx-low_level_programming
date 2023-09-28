@@ -2,7 +2,7 @@
 
 /**
  * is_prime_number - a function tells if a number is a prim number or not
- * helper - a function recursively checks if a number is divisible
+ * @helper - a function recursively checks if a number is divisible
  * by a given divisor, determining if it is not a prime number.
  * @n: the number to be checked
  * @i: a number that evenly divides another number without leaving a remainder
