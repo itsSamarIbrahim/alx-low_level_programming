@@ -15,14 +15,14 @@ int main(int argc, char *argv[])
 
 	for (a = 1; a < argc; a++)
 	{
-		if (!isdigit(*argv[a]))
+		if (*argv[a] >= 48 && *argv[a] <= 57)
 		{
-			printf("Error\n");
-			return (1);
+			sum = sum + atoi(argv[a]);
 		}
 		else
 		{
-			sum = sum + atoi(argv[a]);
+			printf("Error\n");
+                          return (1);
 		}
 	}
 	if (argc == 1)
