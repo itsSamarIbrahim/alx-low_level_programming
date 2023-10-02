@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a;
+	int a, b;
 	int sum = 0;
 
 	if (argc == 1)
@@ -21,15 +21,16 @@ int main(int argc, char *argv[])
 	}
 	for (a = 1; a < argc; a++)
 	{
-		if ((*argv[a] >= 48 && *argv[a] <= 57) || (*argv[a] == '-' && isdigit(*(argv[a] + 1))))
+		while (argv[a][b])
 		{
-			sum = sum + atoi(argv[a]);
+			if (!isdigit(argv[a][b]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			b++;
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum = sum + atoi(argv[a]);
 	}
 	printf("%d\n", sum);
 
