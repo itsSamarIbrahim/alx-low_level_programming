@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	if (argc == 1)
+	if (argc == agrv[0])
 	{
 		printf("0\n");
 		return (0);
