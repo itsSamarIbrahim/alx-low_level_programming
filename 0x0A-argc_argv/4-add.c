@@ -13,11 +13,6 @@ int main(int argc, char *argv[])
 	int a;
 	int sum = 0;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
 	for (a = 1; a < argc; a++)
 	{
 		if (!isdigit(*argv[a]))
@@ -29,6 +24,11 @@ int main(int argc, char *argv[])
 		{
 			sum = sum + atoi(argv[a]);
 		}
+	}
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
 	}
 	printf("%d\n", sum);
 
