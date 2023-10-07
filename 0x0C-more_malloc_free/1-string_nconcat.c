@@ -5,6 +5,7 @@
  * *string_nconcat - a function that concatenates two strings
  * @s1: the first string
  * @s2: the second string to be concatenated
+ * @n: the bytes number of s2 to be concatenated
  * Return: a pointer to a newly allocated memory space that contains
  * the concatenation of s1 followed by the first n bytes of s2
  * If the function fails, it returns NULL.
