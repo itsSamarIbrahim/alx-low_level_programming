@@ -10,7 +10,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int result;
+	int *result;
 
 	restult = malloc(b);
 
