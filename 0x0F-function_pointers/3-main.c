@@ -19,8 +19,11 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if (argv[3] == 0 && (atoi(argv[2]) == '/' || atoi(argv[2]) == '%'))
+	if (atoi(argv[3]) == '0' && (atoi(argv[2]) == '/' || atoi(argv[2]) == '%'))
+	{
 		printf("Error\n");
+		exit(100);
+	}
 
 	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
 
