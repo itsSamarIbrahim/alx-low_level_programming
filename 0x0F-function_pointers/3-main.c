@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - a program that performs simple operations
+ * @argc: the number of the command-line arguments
+ * @argv: the array that contains the command-line arguments
+ * Return: 0 (ON SUCCESS)
+ */
 int main(int argc, char *argv[])
 {
 	int num1, num2;

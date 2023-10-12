@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * get_op_func - a function that selects the right operation to perform
+ * @s: the operation sign
+ * Return: the operation sign (ON SUCCESS)
+ * or NULL (ON FAILURE)
+ */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
