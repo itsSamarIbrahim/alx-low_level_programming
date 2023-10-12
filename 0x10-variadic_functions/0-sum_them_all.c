@@ -2,7 +2,9 @@
 #include <stdarg.h>
 
 /**
- *
+ * sum_them_all - a function that returns the sum of all its parameters
+ * @n: the number of the parameters
+ * Return: addition (ON SUCCESS) or 0 (ON FAILURE)
  */
 int sum_them_all(const unsigned int n, ...)
 {
