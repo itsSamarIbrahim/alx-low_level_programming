@@ -22,13 +22,13 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-        result = get_op_func(argv[2]);
+	result = get_op_func(argv[2]);
 
-        if (result == NULL)
-        {
-                printf("Error\n");
-                exit(99);
-        }
+	if (result == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
 	printf("%d\n", result(num1, num2));
 
