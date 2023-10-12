@@ -4,7 +4,8 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, (*result)(int, int);
+	int num1, num2;
+	int (*result)(int, int);
 
 	if (argc != 4)
 	{
