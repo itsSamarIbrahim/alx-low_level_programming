@@ -23,13 +23,12 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	/**
-	 * if (argv[3][0] == '0' && (argv[2][0] == '/' || argv[2][0] == '%'))
-	 * {
-	 * printf("Error\n");
-	 * exit(100);
-	 * }
-	 */
+
+	 if (num2 == 0 && (argv[2][0] == '/' || argv[2][0] == '%'))
+	 {
+	 printf("Error\n");
+	 exit(100);
+	 }
 
 	printf("%d\n", result(num1, num2));
 
