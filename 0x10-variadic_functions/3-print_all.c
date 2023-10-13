@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_all - a function that prints anything
- * @formant: a pointer to the string of data format types
+ * @format: a pointer to the string of data format types
  * Return: void
  */
 void print_all(const char * const format, ...)
@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				string = va_arg(args, char *);
-				if(!string)
+				if (!string)
 					string = "(nil)";
 				printf("%s", string);
 				break;
