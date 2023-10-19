@@ -4,7 +4,7 @@
  * add_node - a function that adds a new node at the beginning of a list_t list
  * @head: a double pointer to the head of the linked list list_t
  * @str: the string to added in the newly created node
- * Return: the number of the bew total nodes (ON SUCCESS) or NULL (ON FAILURE)
+ * Return: the address of the new element (ON SUCCESS) or NULL (ON FAILURE)
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -19,6 +19,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	(*newNode).str = strdup(str);
+	if ((*newNode).str == NULL)
+	{
+		free(newNode);
+		return (NULL);
+	}
 
 	while (str[len])
 		len++;
