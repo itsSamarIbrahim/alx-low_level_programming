@@ -34,7 +34,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		}
 		(*current).next = newEndNode;
 	}
-	free(newEndNode);
+	/*free(newEndNode);*/
 
 	return (newEndNode);
 }
