@@ -6,6 +6,7 @@
  * @head: a double pointer to the head of the listint_t linked list
  * @idx: it represents the index at which a new node should be
  * inserted in the listint_t linked list
+ * @n: the value of the newly inserted node
  * Return: the address of the newly inserted node (ON SUCCESS)
  * or NULL (ON FAILURE)
  */
@@ -31,7 +32,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	else
 	{
 		current = *head;
-		for (i = 0; current != NULL && i < (idx -1); i++)
+		for (i = 0; current != NULL && i < (idx - 1); i++)
 		{
 			current = (*current).next;
 		}
