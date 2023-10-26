@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * get_endianness - a function that checks the endianness
+ * Return: 0 if the system is big endian (numbers are stored
+ * from biggest to smallest) (ON SUCCESS)
+ * or 1 if the system is little endian (numbers are stored
+ * from smallest to biggest) (ON FAILURE)
+ */
+int get_endianness(void)
+{
+	unsigned int num = 1;
+	char *ptr = (char *)&num;
+
+	if (*ptr == 0)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
