@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	while ((bytes_read = read(fd_from, buffer, sizeof(buffer))) > 0)
 	{
 		if (bytes_read == -1)
 		{
