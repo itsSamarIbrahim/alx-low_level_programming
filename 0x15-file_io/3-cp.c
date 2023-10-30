@@ -37,13 +37,13 @@ int main(int argc, char **argv)
 
 	while (bytes_read > 0)
 	{
-		bytes_read = read(fd_from, buffer, BUFFER_SIZE);
 		bytes_written = write(fd_to, buffer, bytes_read);
 		if (bytes_written == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(98);
 		}
+		bytes_read = read(fd_from, buffer, BUFFER_SIZE);
 	}
 
 	if (bytes_read == -1)
