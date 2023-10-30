@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	int fd_from = 0, fd_to = 0;
-	ssize_t bytes_read, bytes_written;
+	ssize_t bytes_read = 0, bytes_written;
 	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
