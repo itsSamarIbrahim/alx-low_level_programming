@@ -1,12 +1,11 @@
 #include "main.h"
 
-#define NO_READ_ERR "Error: Can't read from file %s\n"
-#define NO_WRITE_ERR "Error: Can't write to %s\n"
-#define NO_CLOSE_ERR "Error: Can't close fd %d\n"
-#define USAGE "Usage: cp file_from file_to\n"
-
 /**
- *
+ * main - a program that copies the content of a file to another file
+ * @argc: the number of command-line arguments passed to the program
+ * @argv: an array of strings contains the command-line arguments
+ * passed to the program
+ * Return: 0 (ON SUCCESS)
  */
 int main(int argc, char **argv)
 {
