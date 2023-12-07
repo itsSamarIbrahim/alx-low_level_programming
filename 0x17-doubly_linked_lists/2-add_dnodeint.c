@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * *add_dnodeint - adds a new node at the beginning of a dlistint_t list
+ * add_dnodeint - adds a new node at the beginning of a dlistint_t list
+ * @head: the head of the linked dlistint_t list
  * @n: the value to be added
  * Return: the address of the new element (ON SUCCESS), or NULL (ON FAILURE)
  */
