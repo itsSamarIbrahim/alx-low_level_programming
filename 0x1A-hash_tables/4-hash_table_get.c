@@ -5,7 +5,7 @@
  * @ht: the hash table
  * @key: key to get the value of
  * Return: value associated with the element (ON SUCCESS)
- * 		or NULL (ON FAILURE)
+ *		or NULL (ON FAILURE)
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
