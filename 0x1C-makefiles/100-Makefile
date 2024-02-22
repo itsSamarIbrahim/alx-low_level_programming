@@ -4,18 +4,18 @@ SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
 
-all:m.h$(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all:m.h$(SRC:.c=.o)
+	$(CC) $(SRC:.c=.o) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) $(SRC:.c=.o)
 
 fclean:
 	$(RM) *~ $(NAME)
-	$(RM) $(OBJ)
+	$(RM) $(SRC:.c=.o)
 
 re: oclean all
 
