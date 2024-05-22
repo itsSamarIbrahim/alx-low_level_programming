@@ -2,43 +2,44 @@
 
 
 /**
- * binary_search - Searches for a value in a sorted array using binary search
+ * binary_search_ - Searches for a value in a sorted array using binary search
  *
  * @array: Pointer to the first element of the array to search in
- * @size: Number of elements in the array
+ * @start: The starting index of the section of the array to be searched (left)
+ * @end: The ending index of the section of the array to be searched (right)
  * @value: The value to search for
  *
  * Return: Index of the value if found, otherwise -1
  */
 int binary_search_(int *array, size_t start, size_t end, int value)
 {
-        size_t i, mid;
+	size_t i, mid;
 
-        if (array == NULL)
-                return (-1);
+	if (array == NULL)
+		return (-1);
 
-        while (start <= end)
-        {
-                printf("Searching in array: ");
-                for (i = start; i <= end; i++)
-                {
-                        printf("%d", array[i]);
-                        if (i < end)
-                                printf(", ");
-                }
-                printf("\n");
+	while (start <= end)
+	{
+		printf("Searching in array: ");
+		for (i = start; i <= end; i++)
+		{
+			printf("%d", array[i]);
+			if (i < end)
+				printf(", ");
+		}
+		printf("\n");
 
-                mid = start + (end - start) / 2;
+		mid = start + (end - start) / 2;
 
-                if (array[mid] == value)
-                        return (mid);
-                else if (array[mid] > value)
-                        end = mid - 1;
-                else
-                        start = mid + 1;
-        }
+		if (array[mid] == value)
+			return (mid);
+		else if (array[mid] > value)
+			end = mid - 1;
+		else
+			start = mid + 1;
+	}
 
-        return (-1);
+	return (-1);
 }
 
 
@@ -64,14 +65,10 @@ int exponential_search(int *array, size_t size, int value)
 	if (array == NULL || size == 0)
 		return (-1);
 	if (array[0] == value)
-		return 0;
+		return (0);
 
-	i = 1;
-	while (i < size && array[i] <= value)
-	{
+	for (i = 1; i < size && array[i] <= value; i *= 2)
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-		i = i * 2;
-	}
 
 	left = i / 2;
 	right = (i < size) ? i : size - 1;
