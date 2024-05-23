@@ -33,9 +33,8 @@ int binary_search_recursive(int *array, size_t left, size_t right, int value)
 	printf("Searching in array: ");
 	for (i = left; i < right; i++)
 	{
-		if (i > start) {
+		if (i > left)
 			printf(", ");
-		}
 		printf("%d", array[i]);
 	}
 	printf("\n");
