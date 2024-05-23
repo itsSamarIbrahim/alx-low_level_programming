@@ -27,7 +27,7 @@ int binary_search_recursive(int *array, size_t left, size_t right, int value)
 {
 	size_t i, mid;
 
-	if (right < left)
+	if (left > right)
 		return (-1);
 
 	printf("Searching in array: ");
@@ -37,7 +37,7 @@ int binary_search_recursive(int *array, size_t left, size_t right, int value)
 
 	mid = left + (right - left) / 2;
 
-	if (array[mid] == value && (mid == left || array[i - 1] != value))
+	if (array[mid] == value && (mid == left || array[mid - 1] != value))
 		return (mid);
 	if (array[mid] >= value)
 		return (binary_search_recursive(array, left, mid, value));
